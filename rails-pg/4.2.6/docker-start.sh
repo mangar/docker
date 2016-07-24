@@ -29,4 +29,4 @@ rake db:create db:migrate db:seed
 # 
 echo "[finish] $(date)" >> ./tmp/docker.pid
 
-rails server -p 3330 -b '0.0.0.0'
+rails server -p 3000 -b '0.0.0.0'
