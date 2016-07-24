@@ -22,12 +22,17 @@ docker build -t mangar/fountainjs:1.0 .
 ```
 
 
-__Creating a Rails project:__
+__Creating a Fountain project:__
 ```
-docker run -v `pwd`:/app mangar/rails-pg:5.0.0 bash -c "rails new ./ -d postgresql -f"
+docker run -v `pwd`:/app mangar/fountainjs:1.0 bash -c "yo fountain-webapp"
 ```
 
 
+
+__Running the project:__
+```
+TODO
+```
 
 
 
