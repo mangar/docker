@@ -31,4 +31,4 @@ ENV DATABASE_PASSWORD "password"
 
 
 RUN gem install bundler && bundle install --jobs 20 --retry 5
-RUN gem install rails -v 4.2.6
+RUN gem install rails -v 5.0.0
