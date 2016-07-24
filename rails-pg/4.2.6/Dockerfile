@@ -18,4 +18,16 @@ RUN apt-get update && apt-get install -y \
   libpq-dev
 
 
+RUN mkdir -p /app 
+ADD ./ /app
+WORKDIR /app
+
+
+# 
+# 
+ENV DATABASE_HOST "postgres"
+ENV DATABASE_USERNAME "postgres"
+ENV DATABASE_PASSWORD "password"
+
+
 RUN gem install bundler && bundle install --jobs 20 --retry 5
