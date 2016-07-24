@@ -1,6 +1,6 @@
 FROM ruby:2.3
 
-MAINTAINER marcio.mangar@gmail.com
+MAINTAINER Marcio Mangar "marcio.mangar@gmail.com"
 
 # aliases
 RUN echo 'alias ".."="cd .."' >> /root/.bashrc
