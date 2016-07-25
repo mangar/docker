@@ -11,5 +11,6 @@ The target is to help me when firing new projects.
 ## Machines
 
 - Rails-PG
+- FountainJS
 
 

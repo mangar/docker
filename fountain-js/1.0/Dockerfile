@@ -35,8 +35,8 @@ RUN npm install -g generator-fountain-webapp
 RUN echo '{ "allow_root": true }' > /root/.bowerrc
 RUN mkdir -p /root/.config/configstore
 RUN chown root:root /root/.config/ -R
-RUN chmod g+rwx /root /root/.config /root/.config/configstore
-
+RUN chmod g+rwx /root /root/.config /root/.config/configstore /root/.config/configstore/insight-yo.json
+RUN touch /root/.config/configstore/insight-yo.json
 
 RUN mkdir -p /app 
 ADD ./ /app
