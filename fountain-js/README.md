@@ -13,6 +13,28 @@ This is a Docker Image for [FountainJS.io](http://fountainjs.io/)
 
 
 
+### 1.5
+
+__News__ 
+- added JSPM
+
+
+
+__Creating the Image:__
+```
+docker build -t mangar/fountainjs:1.5 .
+```
+
+__Starting the WebServer (Nginx):__
+```
+docker run -p 8081:80 -v `pwd`:/app --name mangar-fountainjs-15  mangar/fountainjs:1.5
+```
+
+
+
+
+
+
 ### 1.0
 
 
