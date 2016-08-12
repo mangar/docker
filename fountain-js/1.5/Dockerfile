@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y -q \
 
 
 RUN npm install -g npm
-RUN npm install -g jspm
 
 RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
 RUN apt-get install -y nodejs
@@ -29,6 +28,7 @@ RUN apt-get install -y nodejs
 RUN npm install -g yo
 RUN npm install -g gulp
 RUN npm install -g bower
+RUN npm install -g jspm
 RUN npm install -g generator-fountain-webapp
 
 
