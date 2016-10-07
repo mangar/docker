@@ -2,15 +2,14 @@
 
 ## Summary
 
-Here are my specialized docker repositories. 
+Here are my specialized docker repositories.
 The target is to help me when firing new projects.
 
 
-- - - 
+- - -
 
 ## Machines
 
 - Rails-PG
 - FountainJS
-
-
+- Jekyll

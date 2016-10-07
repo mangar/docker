@@ -1,4 +1,4 @@
-FROM ruby:2.2 
+FROM ruby:2.2
 
 MAINTAINER Marcio Mangar "marcio.mangar@gmail.com"
 
@@ -10,8 +10,8 @@ RUN echo 'alias cl="clear"' >> /root/.bashrc
 RUN echo 'alias ll="cl; l"' >> /root/.bashrc
 
 
-RUN apt-get update && apt-get install -y -q \ 
-  build-essential \ 
+RUN apt-get update && apt-get install -y -q \
+  build-essential \
   wget \
   vim \
   npm \
@@ -36,11 +36,14 @@ RUN npm install -g generator-fountain-webapp
 RUN echo '{ "allow_root": true }' > /root/.bowerrc
 RUN mkdir -p /root/.config/configstore
 RUN chown root:root /root/.config/ -R
+
+RUN chown -R root:root /root/.npm/ 
+
 RUN touch /root/.config/configstore/insight-yo.json
 RUN chmod g+rwx /root /root/.config /root/.config/configstore /root/.config/configstore/insight-yo.json
 
 
-RUN mkdir -p /app 
+RUN mkdir -p /app
 ADD ./ /app
 
 WORKDIR /app
