@@ -2,7 +2,7 @@
 
 Rails with Postgres
 
---- 
+---
 
 
 ## Helpers
@@ -11,9 +11,32 @@ This directory contains some helpers used on Rails projects.
 
 
 
---- 
+---
 
 ## Machines
+
+
+
+
+### 5.0.2
+
+
+__Creating the Image:__
+```
+docker build -t mangar/rails-pg:5.0.2 .
+```
+
+
+__Creating a Rails project:__
+```
+docker run -v `pwd`:/app mangar/rails-pg:5.0.2 bash -c "rails new ./ -d postgresql -f"
+```
+
+
+
+
+
+
 
 
 
@@ -54,7 +77,7 @@ docker run -v `pwd`:/app mangar/rails-pg:4.2.6 bash -c "rails new ./ -d postgres
 
 ---
 
-# Docker 
+# Docker
 
 ## Creating locally
 
@@ -101,7 +124,7 @@ production:
 
 ```
 
-## Docker Compose 
+## Docker Compose
 
 Bellow the docker compose with Postgres image working together with the Rails.
 ```
@@ -137,10 +160,9 @@ rm -rf ./tmp/cache ./tmp/pids ./tmp/sessions ./tmp/sockets
 bundle install
 
 sleep 5
-rake db:create db:migrate db:seed 
+rake db:create db:migrate db:seed
 
 # Running
 echo "[finish] $(date)" >> ./tmp/docker.pid
 rails server -p 3000 -b '0.0.0.0'
 ```
-
