@@ -1,0 +1,16 @@
+services:
+  image: mangar/rails-pg:5.1.2
+  command: bash -c "/bin/bash docker-start.sh"
+  volumes:
+    - .:/app
+  ports:
+    - "3000:3000"
+  links:
+    - postgres
+  environment:
+    - LOGENTRIES_TOKEN=YOUR_TOKEN_HERE
+
+postgres:
+  image: postgres:9.4
+  ports:
+    - "5432:5432"
