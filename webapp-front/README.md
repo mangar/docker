@@ -13,17 +13,17 @@ This is a Docker Image for Web development basic.
 
 
 
-### 1.0
+### 8.0
 
 
 __Creating the Image:__
 ```
-docker build -t mangar/webapp-front:1.0 .
+docker build -t mangar/webapp-front:8.0 .
 ```
 
 __Starting the WebServer (Nginx):__
 ```
-docker run -p 8081:80 -v `pwd`:/app --name mangar-webapp-front-10  mangar/webapp-front:1.0
+docker run -p 3000:3000 -p 8080:8080 -v `pwd`:/app --name mangar-webapp-front-80  mangar/webapp-front:8.0
 ```
 
 
@@ -45,6 +45,24 @@ Start the server on development mode:
 ```
 npm run dev
 ```
+
+
+
+
+### 0.5 (Node 5.x)
+
+
+__Creating the Image:__
+```
+docker build -t mangar/webapp-front:0.5 .
+```
+
+__Starting the WebServer (Nginx):__
+```
+docker run -p 8081:80 -v `pwd`:/app --name mangar-webapp-front-05  mangar/webapp-front:0.5
+```
+
+
 
 
 
