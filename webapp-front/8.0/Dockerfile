@@ -38,6 +38,6 @@ EXPOSE 8080
 
 ENV NODE_ENV=development
 
-
-RUN npm install
-CMD ["node", "server/server.js"]
+# ENV STARTUP_CMD="server/server.js"
+# RUN npm install
+# CMD ["node", "${STARTUP_CMD}"]
