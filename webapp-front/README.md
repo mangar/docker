@@ -6,14 +6,15 @@ This is a Docker Image for Web development basic.
 
 ## Versions
 
-- 1.0 ([Dockerfile](https://github.com/mangar/docker))
+- 8.0 ([Dockerfile](https://github.com/mangar/docker))
+- 0.5 ([Dockerfile](https://github.com/mangar/docker))
 
 
 ## Machines
 
 
 
-### 8.0
+### 8.0 - Nodev8
 
 
 __Creating the Image:__
@@ -49,7 +50,7 @@ npm run dev
 
 
 
-### 0.5 (Node 5.x)
+### 0.5 - Node v5
 
 
 __Creating the Image:__
