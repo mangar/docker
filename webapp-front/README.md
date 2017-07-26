@@ -28,6 +28,26 @@ docker run -p 3000:3000 -p 8080:8080 -v `pwd`:/app --name mangar-webapp-front-80
 ```
 
 
+
+---
+
+
+
+
+### 0.5 - Node v5
+
+
+__Creating the Image:__
+```
+docker build -t mangar/webapp-front:0.5 .
+```
+
+__Starting the WebServer (Nginx):__
+```
+docker run -p 8081:80 -v `pwd`:/app --name mangar-webapp-front-05  mangar/webapp-front:0.5
+```
+
+
 __Starting the server:__
 
 Login into the server by openning Kitematic and clicking on __Exec__ button.
@@ -47,21 +67,6 @@ Start the server on development mode:
 npm run dev
 ```
 
-
-
-
-### 0.5 - Node v5
-
-
-__Creating the Image:__
-```
-docker build -t mangar/webapp-front:0.5 .
-```
-
-__Starting the WebServer (Nginx):__
-```
-docker run -p 8081:80 -v `pwd`:/app --name mangar-webapp-front-05  mangar/webapp-front:0.5
-```
 
 
 
