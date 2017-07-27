@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y -q \
   build-essential \
   wget \
   vim \
+  python3 \
   npm
 
 
