@@ -14,17 +14,17 @@ This is a Docker Image for Web development basic.
 
 
 
-### 8.0 - Nodev8
+### 8.2 (8.1, 8.0) - Nodev8
 
 
 __Creating the Image:__
 ```
-docker build -t mangar/webapp-front:8.0 .
+docker build -t mangar/webapp-front:8.2 .
 ```
 
 __Starting the WebServer (Nginx):__
 ```
-docker run -p 3000:3000 -p 8080:8080 -v `pwd`:/app --name mangar-webapp-front-80  mangar/webapp-front:8.0
+docker run -p 3000:3000 -p 8080:8080 -v `pwd`:/app --name mangar-webapp-front-80  mangar/webapp-front:8.2
 ```
 
 
