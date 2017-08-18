@@ -1,9 +1,0 @@
-{
-  "bucket":"bradesco-portal-next-preprod",
-  "access_key":"AKIAJGW3RN4UIE4IPFUA",
-  "secret":"TDfgC8Nt8ODwdQV7Qdf3LjmuUysXbkXx5fQOjING",
-  "region":"us-east-1",
-  "source_dir":"/Users/marciog/Projects/bradesco/bradesco-portal-next/dist",
-  "replace_content": true,
-  "debug": true
-}
