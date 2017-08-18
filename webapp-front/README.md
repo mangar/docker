@@ -6,7 +6,7 @@ This is a Docker Image for Web development basic.
 
 ## Versions
 
-- 8.0 ([Dockerfile](https://github.com/mangar/docker))
+- 8.x ([Dockerfile](https://github.com/mangar/docker))
 - 0.5 ([Dockerfile](https://github.com/mangar/docker))
 
 
@@ -14,12 +14,12 @@ This is a Docker Image for Web development basic.
 
 
 
-### 8.2 (8.1, 8.0) - Nodev8
+### 8.4 (8.x) - Node V8
 
 
 __Creating the Image:__
 ```
-docker build -t mangar/webapp-front:8.2 .
+docker build -t mangar/webapp-front:8.4 .
 ```
 
 __Starting the WebServer (Nginx):__
