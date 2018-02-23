@@ -43,4 +43,14 @@ Image with:
 
 
 
+### Middleman
+
+- Ruby 2.3
+- NodeJS
+- Unzip
+- Python / PIP
+- Go / S3Upload ( <https://github.com/mangar/go-commands> )
+- Middleman
+
+
 
