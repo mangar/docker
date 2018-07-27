@@ -17,6 +17,9 @@ RUN apt-get update && apt-get install -y -q \
 
 RUN gem install bundler
 RUN gem install jekyll -v 3.8.3
+RUN gem install jekyll-feed -v 0.10.0
+RUN gem install jekyll-seo-tag -v 2.4.0
+RUN gem install minima -v 2.5.0
 
 RUN mkdir -p /app
 ADD ./ /app
