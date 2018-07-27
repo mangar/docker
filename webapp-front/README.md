@@ -18,7 +18,7 @@ This is a Docker Image for Web development basic.
 
 __Creating the Image:__
 ```
-docker build -t mangar/webapp-front:8.4.1 .
+docker build -t mangar/webapp-front:8.4.2 .
 ```
 
 __Starting the WebServer (Nginx):__
