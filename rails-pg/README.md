@@ -17,6 +17,22 @@ This directory contains some helpers used on Rails projects.
 
 
 
+### 5.2.2
+
+
+__Creating the Image:__
+```
+docker build -t mangar/rails-pg:5.2.2 .
+```
+
+
+__Creating a Rails project:__
+```
+docker run -v `pwd`:/app mangar/rails-pg:5.2.2 bash -c "rails new ./ -d postgresql -f"
+```
+
+
+
 
 ### 5.1.2
 
