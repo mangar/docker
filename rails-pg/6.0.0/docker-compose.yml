@@ -1,0 +1,16 @@
+services:
+  image: mangar/rails-pg:6.0.0
+  command: bash -c "/bin/bash docker-start.sh"
+  volumes:
+    - .:/app
+  ports:
+    - "3000:3000"
+  links:
+    - mysql
+  environment:
+    - LOGENTRIES_TOKEN=YOUR_TOKEN_HERE
+
+mysql:
+  image: mysql:8.0
+  ports:
+    - "3306:3306"
