@@ -1,4 +1,4 @@
-FROM ruby:2.3
+FROM ruby:2.6.0
 
 MAINTAINER Marcio Mangar "marcio.mangar@gmail.com"
 
