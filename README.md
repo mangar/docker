@@ -10,10 +10,18 @@ The target is to help me when firing new projects.
 
 ## Machines
 
+- AWS-CLI
 - Rails-PG
 - FountainJS
 - Jekyll
 - WebApp-Front
+
+
+### AWS-CLI
+
+AWS Cli
+
+
 
 
 
@@ -21,14 +29,21 @@ The target is to help me when firing new projects.
 
 Rails with Postgres
 
+
+
+
 ### FountainJS
 
 Image with FountainJS
 
 
+
+
 ### Jekyll
 
 Image with Jekyll
+
+
 
 
 ### WebApp-Front
