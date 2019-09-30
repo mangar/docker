@@ -6,11 +6,36 @@ This is a Docker Image for Web development basic.
 
 ## Versions
 
-- 8.x ([Dockerfile](https://github.com/mangar/docker))
-- 0.5 ([Dockerfile](https://github.com/mangar/docker))
+- 10.x
+- 8.x 
+- 0.5 
 
 
 ## Machines
+
+
+
+
+### 10.16.# - Node V10
+
+
+__Creating the Image:__
+```
+docker build -t mangar/webapp-front:10.16.3 .
+```
+
+__Starting the WebServer (Nginx):__
+```
+docker run -p 3000:3000 -p 8080:8080 -v `pwd`:/app --name mangar-webapp-front-80  mangar/webapp-front:10.16.3
+```
+
+
+
+---
+
+
+
+
 
 
 ### 8.4.1 (8.x) - Node V8
